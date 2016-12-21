@@ -53,19 +53,17 @@ $(document).ready(function() {
 	        	circle.yMovementStep = canvasHeight/2;
 	        	circle.move();
 	        	circle.draw(context);
-	   //      	circles[i--] = circle;
-	   //      	clearCanvas();
-	   //      	for (var i = 0; i < circles.length; i++) {
-				// 	//generateCircle(i);
-				// 	circle.id = circles[i].id;
-				// 	circle.radius = circles[i].radius;			
-				// 	circle.x = circles[i].x;
-				// 	circle.y = circles[i].y;
-				// 	circle.colour = circles[i].colour;
-				// 	circle.draw(context);
-				// }
-	            alert("Clicked circle: " + circle.id);
-	            break;
+	        	circles[i--] = circle;
+	        	clearCanvas();
+	         	for (var i = 0; i < circles.length; i++) {
+					generateCircle(i);
+				 	circle.id = circles[i].id;
+				 	circle.radius = circles[i].radius;			
+					circle.x = circles[i].x;
+					circle.y = circles[i].y;
+				 	circle.colour = circles[i].colour;
+				 	circle.draw(context);
+				 }
 	        }
 	    }
 	    debugger
