@@ -1,2 +1,2 @@
 # canvas-circles
-A sample canvas circles animation application
+A sample canvas random size,colors circles fade animation application
